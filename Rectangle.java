@@ -1,17 +1,28 @@
 public class Rectangle extends Figures {
 
     public Rectangle(String n, int l, int w) {
-        super(n, 0, l, w, 0);
+        super(n, 0, l, w);
     }
     public double calculateArea(){
-        double area = getLength() * getWidth();
+        double area;
+        if (getWidth() !=0) {
+            area = getLength() * getWidth();
+        } else {
+            area = getLength() * getLength();
+        }
         return area;
     }
 
     public double calculatePerimeter(){
-        double circumference = 2 * (getLength() + getWidth());
+        double circumference;
+        if (getWidth() !=0) {
+            circumference = 2 * (getLength() + getWidth());
+        } else {
+            circumference = 4 * getLength();
+        }
         return circumference;
     }
+    
     public void printPerimeterRectangle() {
         printPerimeter();
         double circumference = calculatePerimeter();

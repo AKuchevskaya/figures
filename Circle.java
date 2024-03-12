@@ -1,33 +1,31 @@
 public class Circle extends Figures {
 
-    public Circle(String n, double r) {
-        super(n, r, 0, 0, 0);
+    public Circle(String n, int r) {
+        super(n, r, 0, 0);
     }
 
-    //Площадь круга вычисляется по формуле = PI*radius*radius
-    public double calculateArea(){
+    public double calculateAreaCircle(){
         double area = Math.PI * getRadius() * getRadius();
         return area;
     }
 
-    //Длины окружности вычисляется по формуле = 2*PI*radius
-    public double calculatePerimeter(){
+    public double calculatePerimeterCircle(){
         double circumference = Math.PI * 2 * getRadius();
         return circumference;
-        // System.out.println("Длины окружности равна: " + circumference);
     }
-    public void printPerimeterKrug() {
+
+    public void printPerimeterCircle() {
         printPerimeter();
-        double circumference = calculatePerimeter();
+        double circumference = calculatePerimeterCircle();
         System.out.println("составляет " + circumference);
         System.out.println();
     }
-    public void printAreaKrug(){
+
+    public void printAreaCircle(){
         printArea();
-        double area = calculateArea();
+        double area = calculateAreaCircle();
         System.out.println("составляет " + area);
         System.out.println();
-        // System.out.printf("%.2f\n","составляет " + area);
     }
     
 }
