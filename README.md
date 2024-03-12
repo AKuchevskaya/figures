@@ -4,9 +4,9 @@
 
 Круг (Circle):  
 Свойства: радиус (radius).  
-Методы: calculateArea и calculatePerimeter для вычисления площади и периметра соответственно.  
+Методы: calculateArea и calculatePerimeter для вычисления площади и периметра соответственно. 
+ 
 Прямоугольник (Rectangle):  
-
 Свойства: длина (length) и ширина (width).  
 Методы: calculateArea и calculatePerimeter для вычисления площади и периметра соответственно.  
 

@@ -15,11 +15,20 @@ public class Figures {
     public double getRadius(){
         return radius;
     }
+    public double getLength(){
+        return length;
+    }
+    public double getWidth(){
+        return width;
+    }
+    public double getSide(){
+        return side;
+    }
 
     public void printArea(){
-        System.out.println("площадь фигуры " + name + " с параметрами: " + radius + length + width + side);
+        System.out.println("площадь фигуры " + name + " с параметрами:" + "\n" + "радиус=" + radius + "\n" + "длинна=" + length + "\n" + "ширина=" + width + "\n" + "сторона=" + side + "\n");
     }
     public void printPerimeter(){
-        System.out.println("периметр фигуры " + name + " с параметрами: " + radius + length + width + side);
+        System.out.println("периметр фигуры " + name + " с параметрами:" + "\n" + "радиус=" + radius + "\n" + "длинна=" + length + "\n" + "ширина=" + width + "\n" + "сторона=" + side + "\n");
     }
 }
